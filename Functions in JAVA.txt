@@ -1,0 +1,78 @@
+A function in Java is a block of code that performs a specific task: void functionName() { //task to perform when called; } It is declared with a name, a return type, and optionally, parameters. Functions are essential for structuring and reusing code in Java.
+
+void greet() {
+    System.out.println('Hello, World!');
+}
+
+// Output:
+// 'Hello, World!'
+
+Declaring and Calling Functions in Java: The Basics
+Java functions, also known as methods, are declared within a class. A function declaration includes its name, return type, and optionally, parameters. The function body, enclosed between braces, contains the code that will be executed when the function is called.
+
+Let’s look at a simple example of declaring and calling a function in Java:
+
+public class HelloWorld {
+    // declaring the function
+    static void greet() {
+        System.out.println('Hello, World!');
+    }
+
+    public static void main(String[] args) {
+        // calling the function
+        greet();
+    }
+}
+
+// Output:
+// 'Hello, World!'
+
+
+Advantages of Using Functions:
+Functions provide several benefits in Java programming:
+
+Code Reusability: Once a function is defined, it can be used multiple times throughout your code, preventing the need for code duplication.
+Code Organization: Functions allow you to break down complex code into manageable pieces, making your code easier to read and maintain.
+
+Modularity: Functions enable you to create modular code, where each function performs a specific task. This makes debugging and testing easier.
+
+Function Overloading in Java
+Function overloading allows you to define multiple functions with the same name but different parameters. It’s a way of giving a single function multiple ways to perform a task.
+
+Here’s an example of function overloading in Java:
+
+public class Main {
+    static void display(int num) {
+        System.out.println('Displaying an integer: ' + num);
+    }
+
+    static void display(double num) {
+        System.out.println('Displaying a double: ' + num);
+    }
+
+    public static void main(String[] args) {
+        display(5);
+        display(15.6);
+    }
+}
+
+// Output:
+// 'Displaying an integer: 5'
+// 'Displaying a double: 15.6'
+
+
+import java.util.Scanner;  
+public class FunctionExample {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+          
+        System.out.print("Enter a number: ");  
+        int num1 = scanner.nextInt();  
+          
+        System.out.print("Enter another number: ");  
+        int num2 = scanner.nextInt();  
+        int sum = add(num1, num2);  
+        System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum + ".");    public static int add(int a, int b) {  
+        return a + b;  
+    }  
+}  
